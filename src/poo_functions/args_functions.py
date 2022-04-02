@@ -1,5 +1,5 @@
 def function_one():
-    return "Hello World"
+    return 'Hello World'
 
 
 def function_two(function):

@@ -1,9 +1,9 @@
 supermarket_list = [
-    ["product1", 99],
-    ["product2", 25],
-    ["product3", 45],
-    ["product4", 35],
-    ["product5", 55],
+    ['product1', 99],
+    ['product2', 25],
+    ['product3', 45],
+    ['product4', 35],
+    ['product5', 55],
 ]
 
 
