@@ -1,0 +1,4 @@
+blue==0.7.0
+pip-compile-multi
+prospector==1.6.0
+pytest
