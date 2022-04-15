@@ -21,7 +21,7 @@ lint:
 	@isort . --check
 
 test:
-	@python -m pytest tests/
+	@python -m pytest -s tests/
 
 update-requirements:
 	@rm ./requirements/base.txt
