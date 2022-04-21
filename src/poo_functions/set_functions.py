@@ -78,8 +78,7 @@ from random import randint
 
 
 def list_generator():
-    """This function will generator a list of 10 list with 10 elements each one.
-    """
+    """This function will generator a list of 10 list with 10 elements each one."""
     main_list = list()
     first_list = list()
     second_list = list()
@@ -111,8 +110,7 @@ def list_generator():
 
 
 def check_duplicated_number(main_list: list):
-    """This function will check the first element duplicated in the list of list
-    """
+    """This function will check the first element duplicated in the list of list"""
     checked_numbers = set()
     first_duplicated_number = -1
 

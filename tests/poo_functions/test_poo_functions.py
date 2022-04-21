@@ -1,9 +1,5 @@
-from src.poo_functions.poo_functions import (
-    fizz_buzz_function,
-    hello,
-    porcentage,
-    total_sum
-)
+from src.poo_functions.poo_functions import (fizz_buzz_function, hello,
+                                             porcentage, total_sum)
 
 
 def test_hello():
