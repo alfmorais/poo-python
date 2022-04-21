@@ -1,5 +1,4 @@
-from set_functions import list_generator, check_duplicated_number
-
+from set_functions import check_duplicated_number, list_generator
 
 main_list = list_generator()
 print(main_list)
