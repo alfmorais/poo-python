@@ -3,11 +3,11 @@ from src.poo_functions.list_comprehension import (
     simple_list_comprehension,
     to_resolve_squar_number,
     coordinates_with_list_comprehension,
-    # replace_zero_for_letter_o,
-    # convert_tuple_to_dict,
-    # filter_number_divided_for_two,
-    # filter_with_else,
-    # challenger_with_list_comprehension,
+    replace_zero_for_letter_o,
+    convert_tuple_to_dict,
+    filter_number_divided_for_two,
+    filter_with_else,
+    challenger_with_list_comprehension,
 )
 
 
@@ -44,3 +44,58 @@ def test_coordinates_with_list_comprehension(general_list):
     value = coordinates_with_list_comprehension(general_list)
 
     assert value == expected_value
+
+
+def test_replace_zero_for_letter_o():
+    names = ["alfredo", "morais", "neto"]
+    expected_result = ["alfred0", "m0rais", "net0"]
+
+    result = replace_zero_for_letter_o(names)
+
+    assert result == expected_result
+
+
+def test_convert_tuple_to_dict():
+    obj = (
+        ("Alfredo", "name"),
+        ("Morais", "sobrenome"),
+    )
+
+    expected_result = {
+        "name": "Alfredo",
+        "sobrenome": "Morais",
+    }
+
+    result = convert_tuple_to_dict(obj)
+
+    assert result == expected_result
+
+
+def test_filter_number_divided_for_two(general_list):
+    expected_result = [0, 2, 4, 6, 8]
+
+    result = filter_number_divided_for_two(general_list)
+
+    assert result == expected_result
+
+
+def test_filter_with_else(general_list):
+    expected_result = [
+        0, "is not", "is not", 3,
+        "is not", "is not", 6,
+        "is not", "is not", 9,
+    ]
+
+    result = filter_with_else(general_list)
+
+    assert result == expected_result
+
+
+def test_challenger_with_list_comprehension():
+    example = "0123456789" * 5
+
+    expected_result = "0123456789.0123456789.0123456789.0123456789.0123456789"
+
+    result = challenger_with_list_comprehension(example)
+
+    assert result == expected_result
