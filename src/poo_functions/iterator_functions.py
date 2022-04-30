@@ -8,7 +8,7 @@ def function_convert_obj_in_iter(obj: list):
     object = iter(obj)
     result = []
 
-    for _ in len(object):
+    for _ in len(obj):
         result.append(next(object))
 
     return result
@@ -38,3 +38,7 @@ def get_next():
 def function_create_generator(number: int):
     object = (x for x in range(number + 1))
     return object
+
+
+def calculate_total_of_ecommerce(obj: list):
+    return sum([float(y) for x, y in obj])

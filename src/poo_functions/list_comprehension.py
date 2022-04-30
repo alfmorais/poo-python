@@ -8,33 +8,31 @@ def simple_list_comprehension(obj: list):
 
 # example one
 def to_resolve_squar_number(obj: list):
-    lc_version_one = [number**2 for number in obj]
+    lc_version_one = [number ** 2 for number in obj]
     return lc_version_one
 
 
 # example two
 def coordinates_with_list_comprehension(obj: list):
-    return [
-        (number, coordinate) for number in obj for coordinate in range(3)
-    ]
+    return [(number, coordinate) for number in obj for coordinate in range(3)]
 
 
 # lc_version_two = coordinates_with_list_comprehension(obj=list_one)
 # print(lc_version_two)
 
 # example three
-names = ["alfredo", "morais", "neto"]
+names = ['alfredo', 'morais', 'neto']
 
 
 def replace_zero_for_letter_o(obj: list):
-    lc_version_three = [name.replace("o", "0") for name in obj]
+    lc_version_three = [name.replace('o', '0') for name in obj]
     return lc_version_three
 
 
 # example four
 tuple_example = (
-    ("Alfredo", "name"),
-    ("Morais", "sobrenome"),
+    ('Alfredo', 'name'),
+    ('Morais', 'sobrenome'),
 )
 
 
@@ -54,16 +52,24 @@ def filter_number_divided_for_two(obj: list):
 
 # example six
 def filter_with_else(obj: list):
-    return [value if value % 3 == 0 else "is not" for value in obj]
+    return [value if value % 3 == 0 else 'is not' for value in obj]
 
 
 # challenger
-string = "0123456789" * 5
-list_of_string = ["0123456789", "0123456789", "0123456789", "0123456789", "0123456789"]
-returned_value = "0123456789.0123456789.0123456789.0123456789.0123456789"
+string = '0123456789' * 5
+list_of_string = [
+    '0123456789',
+    '0123456789',
+    '0123456789',
+    '0123456789',
+    '0123456789',
+]
+returned_value = '0123456789.0123456789.0123456789.0123456789.0123456789'
 
 
 def challenger_with_list_comprehension(obj: str):
     slice_value = 10
-    list_value = [obj[i:i + slice_value] for i in range(0, len(obj), slice_value)]
-    return ".".join(list_value)
+    list_value = [
+        obj[i : i + slice_value] for i in range(0, len(obj), slice_value)
+    ]
+    return '.'.join(list_value)

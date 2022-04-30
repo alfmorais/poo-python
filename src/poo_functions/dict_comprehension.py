@@ -1,6 +1,6 @@
 names = [
-    ("name", "Alfredo"),
-    ("lastname", "Morais"),
+    ('name', 'Alfredo'),
+    ('lastname', 'Morais'),
 ]
 
 
