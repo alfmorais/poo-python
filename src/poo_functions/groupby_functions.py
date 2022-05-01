@@ -33,5 +33,5 @@ for students_group, values in students_groupby:
     quantity = len(list(values))
 
     print(f'Nota: {students_group}')
-    print(f"A quantidade alunos que tiraram essa nota: {quantity}")
+    print(f'A quantidade alunos que tiraram essa nota: {quantity}')
     print()
