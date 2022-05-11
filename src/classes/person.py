@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 class Person:
     def __init__(self, name, age, eating=False, speaking=False) -> None:
         self.name = name
