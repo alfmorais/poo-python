@@ -3,4 +3,4 @@ def filter_numbers(obj: list):
 
 
 def filter_price(obj: dict):
-    return dict(filter(lambda price: price["price"] > 1000, obj))
+    return dict(filter(lambda price: price['price'] > 1000, obj))

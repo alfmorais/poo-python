@@ -1,10 +1,7 @@
 from src.poo_functions.data import numbers, persons, products
-from src.poo_functions.map_functions import (
-    get_name,
-    get_price,
-    increase_value,
-    multiplied_list_values
-)
+from src.poo_functions.map_functions import (get_name, get_price,
+                                             increase_value,
+                                             multiplied_list_values)
 
 
 def test_get_name():

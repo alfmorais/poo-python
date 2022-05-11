@@ -1,5 +1,5 @@
-from src.poo_functions.filter_functions import filter_numbers, filter_price
 from src.poo_functions.data import numbers, products
+from src.poo_functions.filter_functions import filter_numbers, filter_price
 
 
 def test_filter_numbers():
@@ -11,6 +11,8 @@ def test_filter_numbers():
 
 def test_filter_price():
     result = filter_price(obj=products)
-    expected_result = dict(filter(lambda price: price["price"] > 1000, products))
+    expected_result = dict(
+        filter(lambda price: price['price'] > 1000, products)
+    )
 
     assert result == expected_result

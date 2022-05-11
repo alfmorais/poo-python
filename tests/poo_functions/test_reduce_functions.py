@@ -1,5 +1,6 @@
-from src.poo_functions.reduce_functions import reduce_with_numbers, reduce_with_products
 from src.poo_functions.data import numbers, products
+from src.poo_functions.reduce_functions import (reduce_with_numbers,
+                                                reduce_with_products)
 
 
 def test_reduce_with_numbers():
@@ -14,6 +15,6 @@ def test_reduce_with_products():
 
     expected_result = 0
     for product in products:
-        expected_result = expected_result + product["price"]
+        expected_result = expected_result + product['price']
 
     assert result == expected_result

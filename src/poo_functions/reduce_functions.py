@@ -6,4 +6,4 @@ def reduce_with_numbers(obj: list):
 
 
 def reduce_with_products(obj: dict):
-    return reduce(lambda total, product: product["price"] + total, obj, 0)
+    return reduce(lambda total, product: product['price'] + total, obj, 0)

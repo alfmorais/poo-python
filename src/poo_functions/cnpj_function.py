@@ -24,7 +24,7 @@ Recap.
 
 
 def clean_cnpj(cnpj: str):
-    new_cnpj = ""
+    new_cnpj = ''
 
     for letter in cnpj:
         try:
@@ -40,7 +40,7 @@ def clean_cnpj(cnpj: str):
 def reduce_cnpj(cleaned_cnpj: str):
     if len(cleaned_cnpj) == 14:
         return cleaned_cnpj[:-2]
-    return "CNPJ Inválido"
+    return 'CNPJ Inválido'
 
 
 def convert_cnpj_to_list(reduce_cnpj: str):
@@ -71,7 +71,7 @@ def find_first_result_list(cnpj_list: list):
             first_result.append(result)
         return first_result
     else:
-        return "Erro de validação de listas."
+        return 'Erro de validação de listas.'
 
 
 def standard_formula(result_list: list):
@@ -95,7 +95,7 @@ def find_second_result_list(cnpj_list: list):
             second_result.append(result)
         return second_result
     else:
-        return "Erro de validação de listas."
+        return 'Erro de validação de listas.'
 
 
 def final_validator(cnpj: str, cnpj_list: list):
@@ -106,7 +106,7 @@ def final_validator(cnpj: str, cnpj_list: list):
     return False
 
 
-cnpj = "04.252.011/0001-10"
+cnpj = '04.252.011/0001-10'
 changed_cnpj = clean_cnpj(cnpj=cnpj)
 cleaned_cnpj = reduce_cnpj(cleaned_cnpj=changed_cnpj)
 cnpj_list = convert_cnpj_to_list(reduce_cnpj=cleaned_cnpj)
